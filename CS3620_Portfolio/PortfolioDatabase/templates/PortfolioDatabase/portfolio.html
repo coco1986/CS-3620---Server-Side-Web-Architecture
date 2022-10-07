@@ -1,0 +1,31 @@
+{% extends 'PortfolioDatabase/base.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+</head>
+<body>
+{% block body %}
+{% for Portfolio in p_list %}
+    <div class="container">
+        <div class="row align-items-center justify-content-md-center">
+            <div class="col-md-3">
+                <img class="card" height="300px" width="320px" src="{{ Portfolio.portfolio_image }}" alt="">
+            </div>
+            <div class="col-md-3 text-center text-white">
+                <h3>{{ Portfolio.portfolio_name }}</h3>
+            </div>
+            <div class="col-md-2">
+                <a href="{% url 'PortfolioDatabase:portfolio_detail' Portfolio.id %}" class="btn btn-success">Details</a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'PortfolioDatabase/base.html' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row align-items-center justify-content-md-center">
+            <div class="col-md-4">
+                <img src="{{ hobby.hobby_image }}" height="350px" width="340px" alt="">
+            </div>
+            <div class="col-md-4 text-white">
+                <h1>{{ hobby.hobby_name }}</h1>
+                <h4>{{ hobby.hobby_desc }}</h4>
+            </div>
+        </div>
+    </div>
+{% endblock %}

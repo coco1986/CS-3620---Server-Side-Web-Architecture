@@ -1,0 +1,18 @@
+{% extends 'PortfolioDatabase/base.html' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row align-items-center justify-content-md-center">
+            <div class="col-md-4">
+                <img src="{{ portfolio.portfolio_image }}" height="350px" width="340px"/>
+            </div>
+            <div class="col-md-4 text-white">
+                <h1 class="align-items-center">{{ portfolio.portfolio_name }}</h1>
+                <h4>{{ portfolio.portfolio_desc }}</h4>
+                {%  if user.is_authenticated %}
+                <a href="{% url 'PortfolioDatabase:delete_item' portfolio.id %}" class="btn btn-info">Delete</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,76 @@
+a.navbar-brand{
+    margin-left: 25px;
+}
+
+nav a {
+    color: greenyellow;
+    font-weight: bolder;
+}
+
+nav a.nav-item:hover {
+    background-color: #4d5270;
+    color: white;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+
+.intro {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.intro-text {
+    font-weight: bold;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+h4 {
+    padding-top: 10px;
+}
+
+div {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 8px;
+}
+div.intro-text {
+    border-radius: 80px;
+    padding-top: 10px;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+    background-size: cover;
+}
+
+p {
+    font-size: large;
+}
+
+.container img {
+    border: 6px solid greenyellow;
+    border-radius: 200px;
+}
+
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+a.btn-success:hover {
+    background-color: lightgreen;
+    color: green;
+    border: 2px solid green;
+}
+

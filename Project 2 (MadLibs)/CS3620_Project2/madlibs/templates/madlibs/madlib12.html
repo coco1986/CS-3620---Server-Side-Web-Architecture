@@ -1,0 +1,38 @@
+{% extends 'madlibs/base.html' %}
+{% include 'madlibs/index.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mad Libs</title>
+</head>
+<body>
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <h2 class="madlib-title">Swimming Mad Lib</h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-7 madlib-story">
+                <p>Today I went swimming with my <span class="madlib">{{ input_list.noun }}</span> at the <span class="madlib">{{ input_list.adjective }}</span> swimming pool in <span class="madlib">{{ input_list.city }}</span>.</p><br>
+                <p>My friend came with me and brought their <span class="madlib">{{ input_list.noun2 }}</span>. When we were there <span class="madlib">{{ input_list.pronoun }}</span> started jumping off the diving board.</p><br>
+                <p>They also wanted to <span class="madlib">{{ input_list.verb }}</span> and play with their <span class="madlib">{{ input_list.noun3 }}</span>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <a href="{% url 'madlibs:index' %}"><button class="btn btn-success">Start Over</button></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

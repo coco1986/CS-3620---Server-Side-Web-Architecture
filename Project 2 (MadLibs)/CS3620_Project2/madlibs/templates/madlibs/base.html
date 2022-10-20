@@ -1,0 +1,23 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Mad Libs</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'madlibs/styles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Sigmar+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+    <a href="{% url 'madlibs:index' %}" class="navbar-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Mad_scientist.svg/1200px-Mad_scientist.svg.png" width="160" height="150" alt=""><div class="row d-flex justify-content-center home-text">Home</div></a>
+</nav>
+
+{% block body %}
+{% endblock %}s
+
+</body>
+</html>

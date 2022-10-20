@@ -1,0 +1,110 @@
+body {
+    padding-bottom: 5em;
+    background-color: #343A40 !important;
+}
+
+.btn-success {
+    background-color: orangered !important;
+    border: solid 3px #DF00FE !important;
+    margin-top: 1em !important;
+}
+
+.btn-success:hover {
+    background-color: greenyellow !important;
+    border: solid 3px orangered !important;
+    color: #DF00FE !important;
+}
+
+.explain {
+    padding: 10px;
+}
+
+.form-titles {
+    color: greenyellow;
+    font-family: 'Sigmar One', 'Chango', cursive;
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+
+h1 {
+    padding-top: 1em;
+}
+
+h2 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h3 {
+    padding-bottom: 1em;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1.welcome {
+    font-family: 'Sigmar One', 'Chango', cursive;
+}
+
+h3.fill-form {
+    color: orangered;
+}
+
+div.home-text {
+    background-color: #343A40;
+    border-radius: 1em 1em 3em 3em;
+    color: greenyellow;
+    font-family: 'Sigmar One', 'Chango', cursive;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.intro {
+    color: #DF00FE;
+}
+
+h2.madlib-title {
+    color: greenyellow;
+    font-family: 'Sigmar One', 'Chango', cursive;
+    text-decoration: underline;
+}
+
+.madlib-story {
+    color: #DF00FE;
+    font-size: larger;
+}
+
+span.madlib {
+    color: orangered !important;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.navbar-brand {
+    background-color: #343A40 !important;
+    border-radius: 1em 1em 2em 2em;
+}
+
+.navbar-brand img {
+    border-radius: 20px;
+}
+
+.navbar-dark {
+    background-image: url("https://wallpapercave.com/uwp/uwp459037.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    height: 240px !important;
+    width: auto !important;
+}
+
+.navbar>a {
+    color: white;
+    font-family: 'Montserrate', Arial, Helvetica, sans-serif;
+}
+
+.navbar>a:hover {
+    color: greenyellow;
+}
+

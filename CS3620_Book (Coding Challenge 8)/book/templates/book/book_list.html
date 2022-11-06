@@ -1,0 +1,85 @@
+{% extends 'book/base.html' %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books</title>
+</head>
+<body>
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <form action="" method="GET">
+                    <input class="search-book" type="search" placeholder="Search for a Book..." name="book_name">
+                    <button class="btn btn-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% for book_item in book_object %}
+                <div class="card mb-3" style="max-width: 1240px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="/media/{{ book_item.image }}" height="500px" alt="">
+                        </div>
+                        <div class="col-md-8 d-flex align-items-center">
+                            <div class="card-body">
+                                <p class="card-text book-info">Name: <span>{{ book_item.name }}</span></p>
+                                <p class="card-text book-info">Category: <span>{{ book_item.category }}</span></p>
+                                <p class="card-text book-info">Description: <span>{{ book_item.desc }}</span></p>
+                                <p class="card-text book-info">Rating: <span>{{ book_item.rating }}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row page-number text-center d-flex justify-content-center">
+            <div class="col-md-12">
+                {% if book_object.has_previous %}
+                <a href="?page=1" class="page-first">First Page</a>
+                <a href="?page={{ book_object.previous_page_number }}" class="page-previous">Previous Page</a>
+                {% endif %}
+
+                {% if book_object.has_next %}
+                    <a href="?page={{ book_object.next_page_number }}" class="page-next">Next Page</a>
+                    <a href="?page={{ book_object.paginator.num_pages }}" class="page-last">Last Page</a>
+                {% endif %}
+
+                <p class="page">Page: <span>{{ book_object.number }} of {{ book_object.paginator.num_pages }}</span></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>
+
+
+
+
+
+<div class="col">
+                {% for book_item in book_object %}
+                <div class="book-image">
+                    <img src="/media/{{ book_item.image }}" height="500px" alt="">
+                </div>
+                <div class="col-md-8 card">
+                    <p class="book-info">Name: <span>{{ book_item.name }}</span></p>
+                    <br>
+                    <p class="book-info">Category: <span>{{ book_item.category }}</span></p>
+                    <br>
+                    <p class="book-info">Description: <span>{{ book_item.desc }}</span></p>
+                    <br>
+                    <p class="book-info">Rating: <span>{{ book_item.rating }}</span></p>
+                    <br>
+                </div>
+                {% endfor %}
+            </div>

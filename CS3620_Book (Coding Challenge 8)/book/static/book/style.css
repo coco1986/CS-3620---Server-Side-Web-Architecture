@@ -1,0 +1,117 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/7c/f7/49/7cf7492d074dedafb226f7d69b3ea7df.jpg") !important;
+    background-size: 100%;
+}
+
+.btn-info {
+    height: 40px;
+    margin-left: -4px;
+    margin-top: -5px;
+}
+
+.card {
+    background: black !important;
+    border-radius: 10px !important;
+    color: white;
+    margin-bottom: 15px !important;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+img {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.nav {
+    overflow: auto;
+}
+
+.navbar-brand, .home {
+    color: white;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+p {
+    color: lightgoldenrodyellow;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 1.5em !important;
+    /*margin-bottom: 1px !important;*/
+}
+
+p.page {
+    color: white;
+    margin-left: 10px !important;
+}
+
+.page-first {
+    color: lightgoldenrodyellow;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+.page-next {
+    color: lightgoldenrodyellow;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+.page-previous {
+    color: lightgoldenrodyellow;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.page-last {
+    color: lightgoldenrodyellow;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.page-number {
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-left: 3px !important;
+    margin-top: 50px;
+    padding-top: 10px;
+    width: 500px;
+}
+
+.search-book {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 25px;
+    padding: 5px;
+    width: 300px;
+}
+
+.search-book:focus {
+    outline: none;
+}
+
+span {
+    color: white !important;
+    font-weight: normal;
+    margin-left: 5px !important;
+}

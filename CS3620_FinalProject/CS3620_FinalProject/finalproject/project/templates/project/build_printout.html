@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monster Builds</title>
+</head>
+<body>
+{% block body %}
+<h1>{{ user_build.battle_name }}</h1>
+<hr>
+<h3>Monsters:</h3>
+<p>{{ user_build.monster_build }}</p>
+<hr>
+<h3>1st Monster Skills:</h3>
+<p>{{ user_build.skill_1 }}</p>
+<hr>
+<h3>1st Monster Equipment:</h3>
+<p>{{ user_build.equip_1 }}</p>
+<!--or possibly do it as a list to make it look better, but that would require more fields on the form.-->
+<!--<ul>-->
+<!--    <li>{{ first_item_1 }}</li>-->
+<!--    <li>{{ first_item_2 }}</li>-->
+<!--    <li>{{ first_item_3 }}</li>-->
+<!--    <li>{{ first_item_4 }}</li>-->
+<!--</ul>-->
+<hr>
+<h3>2nd Monster Skills:</h3>
+<p>{{ user_build.skill_2 }}</p>
+<hr>
+<h3>2nd Monster Equipment:</h3>
+<p>{{ user_build.equip_2 }}</p>
+<hr>
+<h3>3rd Monster Skills:</h3>
+<p>{{ user_build.skill_3 }}</p>
+<hr>
+<h3>3rd Monster Equipment:</h3>
+<p>{{ user_build.equip_3 }}</p>
+<hr>
+<h3>Attack Strategy:</h3>
+<p>{{ user_build.strategy }}</p>
+<hr>
+{% endblock %}
+</body>
+</html>

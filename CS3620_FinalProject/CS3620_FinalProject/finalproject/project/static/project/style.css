@@ -1,0 +1,314 @@
+/* GLOBAL styles    /
+///////////////////*/
+
+body {
+    background-color: #443461 !important;
+}
+
+.card {
+    border: solid black !important;
+    border-radius: 25px !important;
+}
+
+.global-bg {
+    background-image: url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/814370/1f01e9c455dab0df30384d2b727de27b4f7c460b.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #0d527b !important;
+}
+
+.navbar-brand {
+    margin-left: 25px !important;
+}
+
+nav a {
+    color: #CFCFCF !important;
+    font-size: larger !important;
+    font-weight: bolder !important;
+}
+
+nav a.nav-item {
+    margin-right: 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+nav a.nav-item:hover {
+    background-color: #443461;
+    border-radius: 25px;
+    color: white !important;
+}
+
+/* HOME PAGE styles /
+///////////////////*/
+
+.home-header {
+    color: black;
+    font-weight: bolder;
+}
+
+.home-logo {
+    margin-top: 25px;
+}
+
+.intro-card {
+    border: 5px solid black !important;
+    font-family: 'Roboto', serif !important;
+    margin-top: 25px;
+}
+
+.intro-text {
+    font-weight: bolder;
+    line-height: 2em !important;
+    padding: 10px 10px 0px 10px;
+}
+
+.build-btn {
+    background-color: #f1304b !important;
+    border: 5px solid black !important;
+    border-radius: 25px !important;
+    color: white !important;
+    font-weight: bolder !important;
+    margin-right: 50px;
+    padding: 10px !important;
+    width: 150px !important;
+}
+
+.browse-btn {
+    background-color: #f1304b !important;
+    border: 5px solid black !important;
+    border-radius: 25px !important;
+    color: white !important;
+    font-weight: bolder !important;
+    margin-left: 50px;
+    padding: 10px !important;
+    width: 150px !important;
+}
+
+.build-btn, .browse-btn {
+    margin-bottom: 80px;
+    margin-top: 50px !important;
+}
+
+.build-btn:hover, .browse-btn:hover {
+    background-color: white !important;
+    border: 5px solid black !important;
+    color: #f1304b !important;
+}
+
+/* BUILD-FORM PAGE styles /
+///////////////////*/
+
+.add-build-card {
+    background-color: #769bb6 !important;
+    border: 5px solid black !important;
+    font-weight: bolder;
+    line-height: 2em !important;
+    padding: 10px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+
+.add-build-header {
+    color: black;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.form-btn {
+    background-color: #f1304b !important;
+    border: 5px solid black !important;
+    border-radius: 25px !important;
+    color: white !important;
+    font-weight: bolder !important;
+    margin-top: 20px;
+    padding: 10px !important;
+}
+
+.form-btn:hover {
+    background-color: white !important;
+    border: 5px solid black !important;
+    color: #f1304b !important;
+}
+
+.form-browse-btn {
+    background-color: #f1304b !important;
+    border: 5px solid black !important;
+    border-radius: 25px !important;
+    color: white !important;
+    font-weight: bolder !important;
+    margin-bottom: 35px;
+    padding: 10px !important;
+}
+
+.form-browse-btn:hover {
+    background-color: white !important;
+    border: 5px solid black !important;
+    color: #f1304b !important;
+}
+
+input.form-control {
+    margin: 10px 0px 35px 0px;
+}
+
+.skill_1, .skill_2, .skill_3 {
+    margin: 10px 0px 35px 0px;
+}
+
+textarea.form-control {
+    margin-top: 10px;
+}
+
+/* BUILD-LIST PAGE styles /
+///////////////////*/
+
+.builds-list-horizontal-line {
+    margin-top: 50px;
+}
+
+.builds-list-header {
+    color: black;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.builds-list-card-intro {
+    border: 5px solid black !important;
+    font-family: 'Roboto', serif !important;
+    margin-top: 25px;
+}
+
+.builds-list-card-intro-text {
+    font-weight: bolder;
+    line-height: 2em !important;
+    padding: 0px 10px 0px 10px;
+}
+
+.build-list-card {
+    background-color: #769bb6 !important;
+    padding: 10px 0px 0px 0px!important;
+}
+
+.download-btn {
+    background-color: #f1304b !important;
+    border: 5px solid black !important;
+    border-radius: 25px !important;
+    color: white !important;
+    font-weight: bolder !important;
+    margin-left: 50px;
+    padding: 10px !important;
+}
+
+.download-btn:hover {
+    background-color: white !important;
+    border: 5px solid black !important;
+    color: #f1304b !important;
+}
+
+hr {
+    height: 8px;
+    background-color: #443461;
+    border: 2px solid black !important;
+    border-radius: 25px;
+    opacity: 1 !important;
+}
+
+p.battle {
+    font-size: larger;
+    font-weight: bolder !important;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-first {
+    color: #f1304b !important;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.page-last {
+    color: #f1304b !important;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.page-next {
+    color: #f1304b !important;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+.page-number a {
+    color: #f1304b !important;
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    margin-right: 20px !important;
+    text-decoration: underline !important;
+}
+
+.page-number {
+    background-color: white;
+    border: 5px solid #443461 !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    margin-bottom: 100px !important;
+    margin-left: 3px !important;
+    margin-top: 50px !important;
+    padding-top: 10px !important;
+    width: 500px !important;
+}
+
+.page-previous a {
+    color: #f1304b !important;
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    text-decoration: underline !important;
+}
+
+p.page {
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    margin-right: 10px;
+}
+
+.search-build {
+    border: 5px solid black !important;
+    border-radius: 10px !important;
+    margin-top: 25px;
+    padding: 10px !important;
+    width: 500px;
+}
+
+input.search-build:focus {
+    outline: 1px solid black !important;
+}
+
+.search-btn {
+    background-color: #f1304b !important;
+    border: 5px solid black !important;
+    border-radius: 10px !important;
+    color: white !important;
+    font-weight: bolder !important;
+    margin-top: -5px;
+    margin-left: -7px;
+    padding: 10px !important;
+}
+
+.search-btn:hover {
+    background-color: white !important;
+    border: 5px solid black !important;
+    color: #f1304b !important;
+}
